@@ -1,0 +1,22 @@
+.actions {
+  margin-top: 20px;
+  display: flex;
+  padding: 0px 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.actions__item {
+  padding: 0px 5px;
+  box-shadow: 1.5px 3px 3px 1.5px rgb(0 0 0 / 30%);
+  text-align: center;
+  width: 100px;
+  height: 110px;
+}
+.actions__img {
+  width: 55%;
+  object-fit: contain;
+}
+.actions__input {
+  display: none;
+}

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: berkshire;
+  src: url(../fonts/berkshire-swash.regular.ttf);
+}
+@font-face {
+  font-family: Segoe Print;
+  src: url(../fonts/segoeprint.ttf);
+}
+@font-face {
+  font-family: Segoe Script;
+  src: url(../fonts/segoescript.ttf);
+}
+@font-face {
+    font-family: Gabriola;
+    src: url(../fonts/gabriola.ttf);
+}
+@font-face {
+    font-family: Most Wanted;
+    src: url(../fonts/Mostwasted.ttf);
+}
+@font-face {
+    font-family: LordcorpsStencil;
+    src: url(../fonts/Lordcorps.ttf);
+}
+@font-face {
+    font-family: veganStyle;
+    src: url(../fonts/Vegan\ Style\ Personal\ Use.ttf);
+}
+@font-face {
+    font-family: domine;
+    src: url(../fonts/Domine-VariableFont_wght.ttf);
+}

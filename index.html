@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/actions.css">
     <link rel="stylesheet" href="./assets/css/edit.css">
@@ -22,40 +23,45 @@
             <div class="chose">
                 <div class="container">
                     <div class="chose__wrap">
-                        <div class="edit-screen">
+                        <div data-overlayEdit='overlay' class="edit-screen">
                             <div class="edit-wrap">
                                 <div class="edit-font">
-                                    <div style="font-family: 'domian';" class="edit-font-item">
+                                    <div style="font-family: domine;" class="edit-font-item">
                                         Aa
                                     </div>
-                                    <div class="edit-font-item">
+                                    <div style="font-family: berkshire;" class="edit-font-item">
                                         Aa
                                     </div>
-                                    <div class="edit-font-item">
+                                    <div style="font-family: Segoe Print;" class="edit-font-item">
                                         Aa
                                     </div>
-                                    <div class="edit-font-item">
+                                    <div style="font-family: Segoe Script;" class="edit-font-item">
                                         Aa
                                     </div>
-                                    <div class="edit-font-item">
+                                    <div style="font-family: Gabriola;" class="edit-font-item">
                                         Aa
                                     </div>
-                                    <div class="edit-font-item">
+                                    <div style="font-family: Most Wanted;" class="edit-font-item">
                                         Aa
                                     </div>
-                                    <div class="edit-font-item">
+                                    <div style="font-family: LordcorpsStencil;" class="edit-font-item">
                                         Aa
                                     </div>
-                                    <div class="edit-font-item">
+                                    <div style="font-family: veganStyle;" class="edit-font-item">
                                         Aa
                                     </div>
                                 </div>
                                 <form id="formText" class="edit-font-input-wrap">
-                                    <textarea class="formText-input" type="text" id="edit-font-input" spellcheck="true"
-                                        style="font-size: 20px;direction: ltr" value=""
-                                        placeholder="Feel Creative..."></textarea>
+                                    <div class="font-wrap">
+                                        <textarea class="formText-input" type="text" id="edit-font-input"
+                                            spellcheck="true" style="font-size: 20px;font-family: domine;" value=""
+                                            placeholder="Feel Creative..."></textarea>
+                                        <div class="font-size">
+                                            <input class="font__range" step="1" min="8" max="80" value="21" type="range">
+                                        </div>
+                                    </div>
                                     <div class="edit__btn-wrap">
-                                        <button  type="submit" class="edit__btn">сохранити</button>
+                                        <button type="submit" class="edit__btn">сохранити</button>
                                     </div>
                                 </form>
                             </div>
@@ -64,7 +70,7 @@
                 </div>
             </div>
             <div class="actions">
-                <div data-actions="addImg" class="actions__item">
+                <div data-actions="addImg" id="addImg" class="actions__item">
                     <input class="actions__input" type="file">
                     <img data-actions="addImg" class="actions__img"
                         src="https://assets.nameitonsteel.com/icons/uploadIcon.svg" alt="addPhoto">
@@ -75,17 +81,19 @@
                         src="https://assets.nameitonsteel.com/icons/addTextIcon.svg" alt="addText">
                     <div data-actions="addText" class="actions__text">добавить текс</div>
                 </div>
-                <!-- <div class="actions__item">
+                <div class="actions__item">
                     <img class="actions__img" src="https://assets.nameitonsteel.com/icons/addLogoIcon.svg" alt="addIcon">
                     <div class="actions__text">добавить иконку</div>
-                </div> -->
+                </div>
             </div>
         </div>
     </main>
+    <script src="./assets/js/addImages.js"></script>
     <script src="./assets/js/photoList.js"></script>
     <script src="./assets/js/chose.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/actions.js"></script>
+    <script src="./assets/js/movement.js"></script>
 </body>
 
 </html>

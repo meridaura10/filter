@@ -9,18 +9,33 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
+.customTextWrap{
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 20px;
+  margin: 0 auto;
+}
+.custom-img{
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  max-width: 200px;
+  max-height: 200px;
+}
 @media screen and (max-width: 1024px) {
   .chose__wrap {
-    max-width: 80%;
+    width: 95%;
   }
 }
 @media screen and (max-width: 720px) {
   .chose__wrap {
     border: 2px solid #000;
+    width: 98%;
   }
 }
 @media screen and (max-width: 500px) {
